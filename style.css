@@ -116,6 +116,30 @@ h2 {
 }
 .buttons a:hover { background: var(--accent-bg); text-decoration: none; }
 
+/* Publication thumbnails */
+.entries li.pub {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+.thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  padding: 8px;
+  background: #fff;  /* figures have white backgrounds; keep them on white in dark mode too */
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.thumb img { max-width: 100%; max-height: 100%; object-fit: contain; }
+@media (max-width: 600px) {
+  .entries li.pub { grid-template-columns: 1fr; gap: 10px; }
+  .thumb { max-width: 280px; }
+}
+
 /* Resume */
 .cv-item { margin: 0 0 18px; }
 .cv-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 16px; }
