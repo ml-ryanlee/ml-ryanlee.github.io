@@ -26,7 +26,9 @@
 
     <p>I'm a PhD student in Computer Science at USC's Information Sciences Institute, advised by <a href="https://www.isi.edu/~jonmay/">Jonathan May</a>. I study how large language models reason under uncertainty, and how they can learn to think harder only when a problem calls for it.</p>
 
-    <p>Today's language models spend the same computation on every step of their reasoning, whether that step is trivial or difficult. I work on compute-adaptive architectures that scale their computation to the difficulty of each step: thinking harder when a step is hard and less when it's easy. Most recently, I've studied looped language models, which reuse a shared set of layers to vary their effective depth: I found that sparse mixture-of-experts layers are critical to making them scale, and that looped models hold up better than standard ones when they exit early to save compute. I also helped pretrain <a href="https://arxiv.org/abs/2601.06463">Gecko</a>, an efficient architecture for sequences of arbitrary length.</p>
+    <p>Today's language models spend the same computation on every step of their reasoning, whether that step is trivial or difficult. I work on compute-adaptive architectures that scale their computation to the difficulty of each step, along three axes: <em>adaptive depth</em>, by looping a shared set of layers; <em>adaptive width</em>, through sparse mixture-of-experts; and <em>adaptive inference</em>, which I'm exploring in ongoing work.</p>
+
+    <p>Most recently, bringing the first two together, I found that <a href="https://arxiv.org/abs/2605.09165">sparse layers are critical to scaling looped language models</a> (NeurIPS 2026), and that looped models hold up better than standard ones when they exit early to save compute. Before that, I helped pretrain <a href="https://arxiv.org/abs/2601.06463">Gecko</a> (COLM 2026), an efficient architecture for sequences of arbitrary length.</p>
 
     <p>Before grad school, I worked in hardware design at Microsoft (Surface Slim Pen 2) and Apple (Touch ID on the M2 MacBook Air). I hold a bachelor's and master's in Mechanical Engineering from Stanford.</p>
 

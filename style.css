@@ -63,6 +63,8 @@ header .wrap {
 .avatar {
   width: 112px;
   height: 112px;
+  padding: 4px;
+  background: #acbee6;  /* light blue sampled from the shirt in the headshot */
   border-radius: 50%;
   object-fit: cover;
 }
