@@ -10,7 +10,7 @@
 <body>
   <header>
     <div class="wrap">
-      <a class="site-name" href="index.html">Ryan Lee</a>
+      <a class="site-name" href="index.html"><img class="avatar" src="assets/img/headshot.jpeg" alt="">Ryan Lee</a>
       <nav>
         <a href="index.html" aria-current="page">About</a>
         <a href="publications.html">Publications</a>
@@ -21,26 +21,21 @@
   </header>
 
   <main class="wrap">
-    <div class="intro">
-      <div>
-        <h1>Ryan Lee</h1>
-        <p class="subtitle">CS PhD Student, USC Information Sciences Institute</p>
+    <h1>Ryan Lee</h1>
+    <p class="subtitle">CS PhD Student, USC Information Sciences Institute</p>
 
-        <p>I'm a PhD student in Computer Science at the University of Southern California, working at the Information Sciences Institute with <a href="https://www.isi.edu/~jonmay/">Jonathan May</a>.</p>
+    <p>I'm a PhD student in Computer Science at USC's Information Sciences Institute, advised by <a href="https://www.isi.edu/~jonmay/">Jonathan May</a>. I study how large language models reason under uncertainty, and how they can learn to think harder only when a problem calls for it.</p>
 
-        <p>I study compute-adaptive language models: architectures that allocate computation per token rather than applying a fixed depth to every input. My recent work shows that sparse mixture-of-experts layers are critical to scaling looped language models.</p>
+    <p>Today's language models spend the same computation on every step of their reasoning, whether that step is trivial or difficult. I work on compute-adaptive architectures that scale their computation to the difficulty of each step: thinking harder when a step is hard and less when it's easy. Most recently, I've studied looped language models, which reuse a shared set of layers to vary their effective depth: I found that sparse mixture-of-experts layers are critical to making them scale, and that looped models hold up better than standard ones when they exit early to save compute. I also helped pretrain <a href="https://arxiv.org/abs/2601.06463">Gecko</a>, an efficient architecture for sequences of arbitrary length.</p>
 
-        <p>Before grad school, I worked in hardware design at Microsoft (Surface Slim Pen 2) and Apple (Touch ID on the M2 MacBook Air). I hold a bachelor's and master's in Mechanical Engineering from Stanford.</p>
+    <p>Before grad school, I worked in hardware design at Microsoft (Surface Slim Pen 2) and Apple (Touch ID on the M2 MacBook Air). I hold a bachelor's and master's in Mechanical Engineering from Stanford.</p>
 
-        <ul class="links">
-          <li><a href="mailto:ryantlee@usc.edu">ryantlee@usc.edu</a></li>
-          <li><a href="https://scholar.google.com/citations?user=NHANVUMAAAAJ">Google Scholar</a></li>
-          <li><a href="https://github.com/ml-ryanlee">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/ryan-thomas-lee">LinkedIn</a></li>
-        </ul>
-      </div>
-      <img src="assets/img/headshot.jpeg" alt="Photo of Ryan Lee">
-    </div>
+    <ul class="links">
+      <li><a href="mailto:ryantlee@usc.edu">ryantlee@usc.edu</a></li>
+      <li><a href="https://scholar.google.com/citations?user=NHANVUMAAAAJ">Google Scholar</a></li>
+      <li><a href="https://github.com/ml-ryanlee">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/ryan-thomas-lee">LinkedIn</a></li>
+    </ul>
   </main>
 
   <footer class="wrap">© 2026 Ryan Lee</footer>
