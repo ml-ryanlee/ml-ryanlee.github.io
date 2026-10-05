@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes · Ryan Lee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="site-name" href="index.html">Ryan Lee</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="notes.html" aria-current="page">Notes</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Notes</h1>
+    <p class="subtitle">Technical writeups on language model architectures and scaling.</p>
+
+    <ul class="entries">
+      <li>
+        <div class="entry-title">Recursive Large Language Models</div>
+        <div class="entry-meta">October 2026 · 8 pages</div>
+        <p class="entry-summary">A review of recurrent-depth architectures (the Hierarchical Reasoning Model, the Tiny Recursive Model, and Looped Language Models) that reuse a small set of transformer layers to vary effective depth with input difficulty, with a focus on how they are trained.</p>
+        <div class="buttons"><a href="assets/pdf/notes/recursive-language-models.pdf">PDF</a></div>
+      </li>
+      <li>
+        <div class="entry-title">Scaling Large Language Models</div>
+        <div class="entry-meta">October 2026 · 6 pages</div>
+        <p class="entry-summary">How to set up scaling-law studies with a Warmup-Stable-Decay schedule and µP hyperparameter transfer, plus experiments extending µP to untied-embedding and looped language models.</p>
+        <div class="buttons"><a href="assets/pdf/notes/scaling-language-models.pdf">PDF</a></div>
+      </li>
+      <li>
+        <div class="entry-title">Modern Language Models</div>
+        <div class="entry-meta">October 2025 · 7 pages</div>
+        <p class="entry-summary">An overview of modern decoder-only transformer architectures (pre-norm, RMSNorm, SwiGLU, RoPE) and how they evolved from the original transformer, with experiments on a 22M-parameter model built following Stanford's CS336.</p>
+        <div class="buttons"><a href="assets/pdf/notes/modern-language-models.pdf">PDF</a></div>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="wrap">© 2026 Ryan Lee</footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume · Ryan Lee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="site-name" href="index.html">Ryan Lee</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="notes.html">Notes</a>
+        <a href="resume.html" aria-current="page">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Resume</h1>
+    <div class="buttons"><a href="assets/pdf/resume.pdf">Download PDF</a></div>
+
+    <h2>Education</h2>
+    <div class="cv-item">
+      <div class="cv-head"><strong>University of Southern California</strong><span class="when">2023 – expected 2029</span></div>
+      <p>PhD and Master's in Computer Science</p>
+      <ul>
+        <li>Adaptive Model Reasoning, Long-context Models, Reinforcement Learning</li>
+        <li>Natural Language Processing, Computer Vision, Algorithms, OS</li>
+      </ul>
+    </div>
+    <div class="cv-item">
+      <div class="cv-head"><strong>Stanford University</strong><span class="when">2013 – 2019</span></div>
+      <p>Master's and Bachelor's in Mechanical Engineering</p>
+      <ul>
+        <li>Manufacturing, Robotics, Programming, Applied Machine Learning</li>
+      </ul>
+    </div>
+
+    <h2>Research Experience</h2>
+    <div class="cv-item">
+      <div class="cv-head"><strong>Adaptive-Depth Language Models, USC ISI</strong><span class="when">May 2025 – May 2026</span></div>
+      <ul>
+        <li>Found sparse MoE layers resolve the scaling deficit of looped transformers.</li>
+        <li>Looped-MoE beat dense LMs on OLMES (39.6 vs 38.7) with 12% fewer params.</li>
+        <li>Looped models degrade less on early exit: 51.0 vs 55.4 ppl at 10% FLOPs saved.</li>
+      </ul>
+    </div>
+    <div class="cv-item">
+      <div class="cv-head"><strong>LLM Pretraining &amp; Long Context Legal Retrieval, USC ISI</strong><span class="when">Nov 2024 – May 2025</span></div>
+      <ul>
+        <li>Pretrained Gecko 1B on a 1.7T token corpus, outperforming OLMo1.</li>
+        <li>Developed IR pipelines using FAISS for efficient dense retrieval and ranking.</li>
+      </ul>
+    </div>
+
+    <h2>Industry Experience</h2>
+    <div class="cv-item">
+      <div class="cv-head"><strong>Netflix, Machine Learning Engineer Intern</strong><span class="when">May 2026 – Aug 2026</span></div>
+      <ul>
+        <li>Rewrote &amp; pretrained a legacy model with GQA, RMSNorm, and RoPE for personalized generation of rows of titles on the Netflix homepage.</li>
+        <li>Developed cold-start recommendation with semantic IDs (cold recall 0→0.113).</li>
+        <li>Post-trained an LLM for homepage row title recommendation via SFT and GRPO.</li>
+      </ul>
+    </div>
+    <div class="cv-item">
+      <div class="cv-head"><strong>Apple, Product Designer</strong><span class="when">May 2021 – June 2023</span></div>
+      <ul>
+        <li>Led Touch ID development on the M2 MacBook Air through mass production.</li>
+        <li>Guaranteed Touch ID by design across &gt;1M units via Monte Carlo and 3-D FEA.</li>
+      </ul>
+    </div>
+    <div class="cv-item">
+      <div class="cv-head"><strong>Microsoft, Mechanical Design</strong><span class="when">Sep 2019 – Apr 2021</span></div>
+      <ul>
+        <li>Built Surface Slim Pen 2 haptic waveforms via bandpass filtering and FFTs.</li>
+        <li>Designed an automated computer-vision pen tester accurate to 500 microns.</li>
+      </ul>
+    </div>
+
+    <h2>Publications</h2>
+    <p>See <a href="publications.html">Publications</a>.</p>
+
+    <h2>Skills</h2>
+    <div class="cv-item">
+      <p><strong>Programming:</strong> Python, C/C++, R, Java, Bash/Shell scripting</p>
+      <p><strong>ML &amp; NLP:</strong> PyTorch, HF (Transformers, Datasets), scikit-learn, spaCy, Pandas, NumPy</p>
+      <p><strong>Retrieval:</strong> FAISS, LlamaIndex, dense retrieval, RAG systems, embedding models</p>
+      <p><strong>Infrastructure:</strong> SLURM, AWS/GCP, Git, Conda/pip, Jupyter, Wandb</p>
+    </div>
+  </main>
+
+  <footer class="wrap">© 2026 Ryan Lee</footer>
+</body>
+</html>

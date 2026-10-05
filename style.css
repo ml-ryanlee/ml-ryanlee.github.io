@@ -1,0 +1,127 @@
+:root {
+  --bg: #fdfdfc;
+  --text: #1f2328;
+  --muted: #646b73;
+  --rule: #e4e4e0;
+  --accent: #8a1c1c;
+  --accent-bg: #f6eeee;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181b;
+    --text: #e6e6e3;
+    --muted: #9aa0a6;
+    --rule: #2c3035;
+    --accent: #e08a7e;
+    --accent-bg: #2a2020;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header + nav */
+header {
+  border-bottom: 1px solid var(--rule);
+  padding: 22px 0 14px;
+  margin-bottom: 36px;
+}
+header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+.site-name { font-weight: 700; font-size: 1.1rem; color: var(--text); }
+nav { display: flex; flex-wrap: wrap; gap: 4px 20px; font-family: system-ui, -apple-system, sans-serif; font-size: 0.92rem; }
+nav a { color: var(--muted); }
+nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
+
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 6px; }
+h2 {
+  font-size: 1.15rem;
+  margin: 40px 0 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--rule);
+}
+.subtitle { color: var(--muted); margin: 0 0 20px; }
+
+/* About */
+.intro {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+.intro img {
+  width: 180px;
+  height: 180px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.92rem;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+@media (max-width: 600px) {
+  .intro { flex-direction: column-reverse; gap: 20px; }
+  .intro img { width: 140px; height: 140px; }
+}
+
+/* Entry lists (publications, notes) */
+.entries { list-style: none; margin: 0; padding: 0; }
+.entries li { margin: 0 0 26px; }
+.entry-title { font-weight: 600; }
+.entry-meta { color: var(--muted); font-size: 0.95rem; }
+.entry-meta .me { color: var(--text); font-weight: 600; }
+.entry-summary { margin: 4px 0 0; }
+.buttons { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+.buttons a {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  padding: 2px 10px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+}
+.buttons a:hover { background: var(--accent-bg); text-decoration: none; }
+
+/* Resume */
+.cv-item { margin: 0 0 18px; }
+.cv-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 16px; }
+.cv-head .when { color: var(--muted); font-size: 0.95rem; }
+.cv-item ul { margin: 4px 0 0; padding-left: 20px; }
+.cv-item p { margin: 2px 0 0; }
+
+footer {
+  margin: 56px 0 32px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
